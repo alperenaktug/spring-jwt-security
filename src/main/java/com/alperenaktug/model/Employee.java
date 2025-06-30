@@ -22,6 +22,6 @@ public class Employee {
     @Column(name = "lastname")
     private String lastName;
 
-    @ManyToOne
+    @ManyToOne(optional = false)
     private Department department;
 }
